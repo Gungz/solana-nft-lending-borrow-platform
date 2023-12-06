@@ -5,14 +5,18 @@ seeds = false
 skip-lint = false
 
 [programs.localnet]
+nft_lend_borrow = "DZSXK8Tvqo4vGqhW9mGjFuWX5XFcPGoJ5daJhMhxLFuK"
+
+[programs.devnet]
 nft_lend_borrow = "8o9mJn2E4DFr5hGMqaF2Uh7bRJkx85KzFp9WyHwR3SGa"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
-wallet = "/Users/user/.config/solana/id.json"
+cluster = "Devnet"
+wallet = "/Users/user/my-solana-wallet/id.json"
+
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
